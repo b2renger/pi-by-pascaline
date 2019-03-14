@@ -1,0 +1,127 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    font-family: 'Sniglet', cursive;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%px;
+    background: white;
+    opacity: 1;
+    box-shadow: 5px 5px 5px #888888;
+    outline: 0px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    cursor: pointer;
+    width: 125px;
+    height: 6px;
+    opacity: 0.75;
+    box-shadow: 5px 5px 5px #888888;
+    outline: 0px;
+}
+
+
+p {
+    color: black;
+    font-family: 'Sniglet', cursive;
+    font-size: 50px;
+    padding-bottom: 0px;
+}
+
+
+
+
+
+
+/* Tooltip container */
+.tooltip {
+    font-family: 'Sniglet', cursive;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    z-index: 1;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    display: block;
+    border-bottom: 0px dotted black;
+    /* If you want dots under the hoverable text */
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    box-shadow: 5px 5px 5px #888888;
+    right: 110%;
+    margin-left: -13px;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    font-family: 'Sniglet', cursive;
+    visibility: hidden;
+    width: 4000%;
+    background-color: #CDE8E8;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    right: 110%;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    right: 110%;
+    margin-left: 15px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #CDE8E8 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
